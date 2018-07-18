@@ -19,7 +19,6 @@
 		04720F2F20E1E182004B3334 /* MeiTuanAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F2E20E1E182004B3334 /* MeiTuanAppViewController.m */; };
 		04720F3220E1E191004B3334 /* GovAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F3120E1E191004B3334 /* GovAppViewController.m */; };
 		04720F3520E1E1A0004B3334 /* AliPayAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F3420E1E1A0004B3334 /* AliPayAppViewController.m */; };
-		04720F4820E223F9004B3334 /* MTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F4720E223F9004B3334 /* MTTableViewCell.m */; };
 		04720F6320E224C9004B3334 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F4B20E224C9004B3334 /* MASCompositeConstraint.m */; };
 		04720F6420E224C9004B3334 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F4E20E224C9004B3334 /* MASConstraint.m */; };
 		04720F6520E224C9004B3334 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F5020E224C9004B3334 /* MASConstraintMaker.m */; };
@@ -31,15 +30,27 @@
 		04720F6B20E224C9004B3334 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F5F20E224C9004B3334 /* View+MASAdditions.m */; };
 		04720F6C20E224C9004B3334 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F6220E224C9004B3334 /* ViewController+MASAdditions.m */; };
 		04720F6F20E224F4004B3334 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F6D20E224F4004B3334 /* UIImage+Extension.m */; };
-		04720F7220E227DC004B3334 /* MTBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F7120E227DC004B3334 /* MTBaseTableView.m */; };
-		04720F7520E22833004B3334 /* MTBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F7420E22833004B3334 /* MTBaseView.m */; };
-		04720F7820E22859004B3334 /* MTDetailNavgation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F7720E22859004B3334 /* MTDetailNavgation.m */; };
-		04720F7B20E228D6004B3334 /* MTDetailCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F7A20E228D6004B3334 /* MTDetailCollection.m */; };
-		04720F7E20E22909004B3334 /* MTGoodsCarToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F7D20E22909004B3334 /* MTGoodsCarToolBar.m */; };
-		04720F8120E229B6004B3334 /* MTDetailSubContro.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F8020E229B6004B3334 /* MTDetailSubContro.m */; };
-		04720F8420E229E5004B3334 /* MTGoodsContro.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F8320E229E5004B3334 /* MTGoodsContro.m */; };
-		04720F8720E22A3D004B3334 /* MTDetailMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F8620E22A3D004B3334 /* MTDetailMenuView.m */; };
-		04720F8A20E22A64004B3334 /* MTDetailMenuList.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F8920E22A64004B3334 /* MTDetailMenuList.m */; };
+		04F8E3FB20FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E3F920FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m */; };
+		04F8E3FE20FF1DDE00BC8EB5 /* MTShopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E3FD20FF1DDE00BC8EB5 /* MTShopListCell.m */; };
+		04F8E40120FF236100BC8EB5 /* MeiTuanShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E40020FF236100BC8EB5 /* MeiTuanShopViewController.m */; };
+		04F8E40520FF24D200BC8EB5 /* MTSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E40420FF24D200BC8EB5 /* MTSectionHeader.m */; };
+		04F8E40820FF258E00BC8EB5 /* MTShopHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E40720FF258E00BC8EB5 /* MTShopHeaderView.m */; };
+		04F8E40C20FF27C600BC8EB5 /* MTShopCountStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E40B20FF27C600BC8EB5 /* MTShopCountStepper.m */; };
+		04F8E40F20FF286000BC8EB5 /* FQGoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E40E20FF286000BC8EB5 /* FQGoodsModel.m */; };
+		04F8E41220FF28C500BC8EB5 /* FQGoodsGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E41120FF28C500BC8EB5 /* FQGoodsGroupModel.m */; };
+		04F8E41520FF290D00BC8EB5 /* FQGoodsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E41420FF290D00BC8EB5 /* FQGoodsListModel.m */; };
+		04F8E41820FF294300BC8EB5 /* FQShopCartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E41720FF294300BC8EB5 /* FQShopCartModel.m */; };
+		04F8E41B20FF295300BC8EB5 /* FQShopBagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E41A20FF295300BC8EB5 /* FQShopBagModel.m */; };
+		04F8E41E20FF2FD900BC8EB5 /* FQLinkageTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E41D20FF2FD900BC8EB5 /* FQLinkageTableView.m */; };
+		04F8E42120FF301E00BC8EB5 /* FQGoodsIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E42020FF301E00BC8EB5 /* FQGoodsIndexCell.m */; };
+		04F8E42420FF32CD00BC8EB5 /* FQGoodsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E42320FF32CD00BC8EB5 /* FQGoodsListCell.m */; };
+		04F8E42720FF3AA300BC8EB5 /* FQShoppingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E42620FF3AA300BC8EB5 /* FQShoppingBar.m */; };
+		04F8E42A20FF3AC200BC8EB5 /* FQShoppingBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E42920FF3AC200BC8EB5 /* FQShoppingBarView.m */; };
+		04F8E42D20FF3ADA00BC8EB5 /* FQShoppingCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E42C20FF3ADA00BC8EB5 /* FQShoppingCartView.m */; };
+		04F8E43020FF3AEC00BC8EB5 /* FQCartHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E42F20FF3AEC00BC8EB5 /* FQCartHeader.m */; };
+		04F8E43320FF3AFF00BC8EB5 /* FQCartFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E43220FF3AFF00BC8EB5 /* FQCartFooter.m */; };
+		04F8E43620FF3B0D00BC8EB5 /* FQCartGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E43520FF3B0D00BC8EB5 /* FQCartGoodsCell.m */; };
+		04F8E43820FF58FD00BC8EB5 /* FQShoppingBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F8E43720FF58FD00BC8EB5 /* FQShoppingBarView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +96,6 @@
 		04720F3120E1E191004B3334 /* GovAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GovAppViewController.m; sourceTree = "<group>"; };
 		04720F3320E1E1A0004B3334 /* AliPayAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayAppViewController.h; sourceTree = "<group>"; };
 		04720F3420E1E1A0004B3334 /* AliPayAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayAppViewController.m; sourceTree = "<group>"; };
-		04720F4620E223F9004B3334 /* MTTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTableViewCell.h; sourceTree = "<group>"; };
-		04720F4720E223F9004B3334 /* MTTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTableViewCell.m; sourceTree = "<group>"; };
 		04720F4A20E224C9004B3334 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		04720F4B20E224C9004B3334 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		04720F4C20E224C9004B3334 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -114,24 +123,48 @@
 		04720F6220E224C9004B3334 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		04720F6D20E224F4004B3334 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		04720F6E20E224F4004B3334 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
-		04720F7020E227DC004B3334 /* MTBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBaseTableView.h; sourceTree = "<group>"; };
-		04720F7120E227DC004B3334 /* MTBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBaseTableView.m; sourceTree = "<group>"; };
-		04720F7320E22833004B3334 /* MTBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBaseView.h; sourceTree = "<group>"; };
-		04720F7420E22833004B3334 /* MTBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBaseView.m; sourceTree = "<group>"; };
-		04720F7620E22859004B3334 /* MTDetailNavgation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTDetailNavgation.h; sourceTree = "<group>"; };
-		04720F7720E22859004B3334 /* MTDetailNavgation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDetailNavgation.m; sourceTree = "<group>"; };
-		04720F7920E228D6004B3334 /* MTDetailCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTDetailCollection.h; sourceTree = "<group>"; };
-		04720F7A20E228D6004B3334 /* MTDetailCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDetailCollection.m; sourceTree = "<group>"; };
-		04720F7C20E22909004B3334 /* MTGoodsCarToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTGoodsCarToolBar.h; sourceTree = "<group>"; };
-		04720F7D20E22909004B3334 /* MTGoodsCarToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTGoodsCarToolBar.m; sourceTree = "<group>"; };
-		04720F7F20E229B6004B3334 /* MTDetailSubContro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTDetailSubContro.h; sourceTree = "<group>"; };
-		04720F8020E229B6004B3334 /* MTDetailSubContro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDetailSubContro.m; sourceTree = "<group>"; };
-		04720F8220E229E5004B3334 /* MTGoodsContro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTGoodsContro.h; sourceTree = "<group>"; };
-		04720F8320E229E5004B3334 /* MTGoodsContro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTGoodsContro.m; sourceTree = "<group>"; };
-		04720F8520E22A3D004B3334 /* MTDetailMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTDetailMenuView.h; sourceTree = "<group>"; };
-		04720F8620E22A3D004B3334 /* MTDetailMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDetailMenuView.m; sourceTree = "<group>"; };
-		04720F8820E22A64004B3334 /* MTDetailMenuList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTDetailMenuList.h; sourceTree = "<group>"; };
-		04720F8920E22A64004B3334 /* MTDetailMenuList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDetailMenuList.m; sourceTree = "<group>"; };
+		04F8E3F920FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		04F8E3FA20FF1AEC00BC8EB5 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		04F8E3FC20FF1DDE00BC8EB5 /* MTShopListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTShopListCell.h; sourceTree = "<group>"; };
+		04F8E3FD20FF1DDE00BC8EB5 /* MTShopListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTShopListCell.m; sourceTree = "<group>"; };
+		04F8E3FF20FF236100BC8EB5 /* MeiTuanShopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeiTuanShopViewController.h; sourceTree = "<group>"; };
+		04F8E40020FF236100BC8EB5 /* MeiTuanShopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeiTuanShopViewController.m; sourceTree = "<group>"; };
+		04F8E40320FF24D200BC8EB5 /* MTSectionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTSectionHeader.h; sourceTree = "<group>"; };
+		04F8E40420FF24D200BC8EB5 /* MTSectionHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTSectionHeader.m; sourceTree = "<group>"; };
+		04F8E40620FF258E00BC8EB5 /* MTShopHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTShopHeaderView.h; sourceTree = "<group>"; };
+		04F8E40720FF258E00BC8EB5 /* MTShopHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTShopHeaderView.m; sourceTree = "<group>"; };
+		04F8E40920FF278900BC8EB5 /* MTShopCartDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTShopCartDefine.h; sourceTree = "<group>"; };
+		04F8E40A20FF27C600BC8EB5 /* MTShopCountStepper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTShopCountStepper.h; sourceTree = "<group>"; };
+		04F8E40B20FF27C600BC8EB5 /* MTShopCountStepper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTShopCountStepper.m; sourceTree = "<group>"; };
+		04F8E40D20FF286000BC8EB5 /* FQGoodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQGoodsModel.h; sourceTree = "<group>"; };
+		04F8E40E20FF286000BC8EB5 /* FQGoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQGoodsModel.m; sourceTree = "<group>"; };
+		04F8E41020FF28C500BC8EB5 /* FQGoodsGroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQGoodsGroupModel.h; sourceTree = "<group>"; };
+		04F8E41120FF28C500BC8EB5 /* FQGoodsGroupModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQGoodsGroupModel.m; sourceTree = "<group>"; };
+		04F8E41320FF290D00BC8EB5 /* FQGoodsListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQGoodsListModel.h; sourceTree = "<group>"; };
+		04F8E41420FF290D00BC8EB5 /* FQGoodsListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQGoodsListModel.m; sourceTree = "<group>"; };
+		04F8E41620FF294300BC8EB5 /* FQShopCartModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQShopCartModel.h; sourceTree = "<group>"; };
+		04F8E41720FF294300BC8EB5 /* FQShopCartModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQShopCartModel.m; sourceTree = "<group>"; };
+		04F8E41920FF295300BC8EB5 /* FQShopBagModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQShopBagModel.h; sourceTree = "<group>"; };
+		04F8E41A20FF295300BC8EB5 /* FQShopBagModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQShopBagModel.m; sourceTree = "<group>"; };
+		04F8E41C20FF2FD900BC8EB5 /* FQLinkageTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQLinkageTableView.h; sourceTree = "<group>"; };
+		04F8E41D20FF2FD900BC8EB5 /* FQLinkageTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQLinkageTableView.m; sourceTree = "<group>"; };
+		04F8E41F20FF301E00BC8EB5 /* FQGoodsIndexCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQGoodsIndexCell.h; sourceTree = "<group>"; };
+		04F8E42020FF301E00BC8EB5 /* FQGoodsIndexCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQGoodsIndexCell.m; sourceTree = "<group>"; };
+		04F8E42220FF32CD00BC8EB5 /* FQGoodsListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQGoodsListCell.h; sourceTree = "<group>"; };
+		04F8E42320FF32CD00BC8EB5 /* FQGoodsListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQGoodsListCell.m; sourceTree = "<group>"; };
+		04F8E42520FF3AA300BC8EB5 /* FQShoppingBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQShoppingBar.h; sourceTree = "<group>"; };
+		04F8E42620FF3AA300BC8EB5 /* FQShoppingBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQShoppingBar.m; sourceTree = "<group>"; };
+		04F8E42820FF3AC200BC8EB5 /* FQShoppingBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQShoppingBarView.h; sourceTree = "<group>"; };
+		04F8E42920FF3AC200BC8EB5 /* FQShoppingBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQShoppingBarView.m; sourceTree = "<group>"; };
+		04F8E42B20FF3ADA00BC8EB5 /* FQShoppingCartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQShoppingCartView.h; sourceTree = "<group>"; };
+		04F8E42C20FF3ADA00BC8EB5 /* FQShoppingCartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQShoppingCartView.m; sourceTree = "<group>"; };
+		04F8E42E20FF3AEC00BC8EB5 /* FQCartHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQCartHeader.h; sourceTree = "<group>"; };
+		04F8E42F20FF3AEC00BC8EB5 /* FQCartHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQCartHeader.m; sourceTree = "<group>"; };
+		04F8E43120FF3AFF00BC8EB5 /* FQCartFooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQCartFooter.h; sourceTree = "<group>"; };
+		04F8E43220FF3AFF00BC8EB5 /* FQCartFooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQCartFooter.m; sourceTree = "<group>"; };
+		04F8E43420FF3B0D00BC8EB5 /* FQCartGoodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQCartGoodsCell.h; sourceTree = "<group>"; };
+		04F8E43520FF3B0D00BC8EB5 /* FQCartGoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQCartGoodsCell.m; sourceTree = "<group>"; };
+		04F8E43720FF58FD00BC8EB5 /* FQShoppingBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FQShoppingBarView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +215,8 @@
 		0434ECE720CE1B33000156A5 /* FQLinkageTableViewTool */ = {
 			isa = PBXGroup;
 			children = (
+				04F8E3FA20FF1AEC00BC8EB5 /* UINavigationBar+Awesome.h */,
+				04F8E3F920FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m */,
 				04720F6E20E224F4004B3334 /* UIImage+Extension.h */,
 				04720F6D20E224F4004B3334 /* UIImage+Extension.m */,
 				04720F4920E224C9004B3334 /* Masonry */,
@@ -244,26 +279,9 @@
 			children = (
 				04720F2D20E1E182004B3334 /* MeiTuanAppViewController.h */,
 				04720F2E20E1E182004B3334 /* MeiTuanAppViewController.m */,
-				04720F4620E223F9004B3334 /* MTTableViewCell.h */,
-				04720F4720E223F9004B3334 /* MTTableViewCell.m */,
-				04720F7020E227DC004B3334 /* MTBaseTableView.h */,
-				04720F7120E227DC004B3334 /* MTBaseTableView.m */,
-				04720F7320E22833004B3334 /* MTBaseView.h */,
-				04720F7420E22833004B3334 /* MTBaseView.m */,
-				04720F7620E22859004B3334 /* MTDetailNavgation.h */,
-				04720F7720E22859004B3334 /* MTDetailNavgation.m */,
-				04720F7920E228D6004B3334 /* MTDetailCollection.h */,
-				04720F7A20E228D6004B3334 /* MTDetailCollection.m */,
-				04720F7C20E22909004B3334 /* MTGoodsCarToolBar.h */,
-				04720F7D20E22909004B3334 /* MTGoodsCarToolBar.m */,
-				04720F7F20E229B6004B3334 /* MTDetailSubContro.h */,
-				04720F8020E229B6004B3334 /* MTDetailSubContro.m */,
-				04720F8220E229E5004B3334 /* MTGoodsContro.h */,
-				04720F8320E229E5004B3334 /* MTGoodsContro.m */,
-				04720F8520E22A3D004B3334 /* MTDetailMenuView.h */,
-				04720F8620E22A3D004B3334 /* MTDetailMenuView.m */,
-				04720F8820E22A64004B3334 /* MTDetailMenuList.h */,
-				04720F8920E22A64004B3334 /* MTDetailMenuList.m */,
+				04F8E3F620FF1AB900BC8EB5 /* Controller */,
+				04F8E3F820FF1AB900BC8EB5 /* Model */,
+				04F8E3F720FF1AB900BC8EB5 /* View */,
 			);
 			path = MeiTuanApp;
 			sourceTree = "<group>";
@@ -307,6 +325,75 @@
 				04720F6220E224C9004B3334 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		04F8E3F620FF1AB900BC8EB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04F8E3FF20FF236100BC8EB5 /* MeiTuanShopViewController.h */,
+				04F8E40020FF236100BC8EB5 /* MeiTuanShopViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04F8E3F720FF1AB900BC8EB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04F8E40920FF278900BC8EB5 /* MTShopCartDefine.h */,
+				04F8E40220FF246B00BC8EB5 /* ShopCart */,
+				04F8E3FC20FF1DDE00BC8EB5 /* MTShopListCell.h */,
+				04F8E3FD20FF1DDE00BC8EB5 /* MTShopListCell.m */,
+				04F8E40320FF24D200BC8EB5 /* MTSectionHeader.h */,
+				04F8E40420FF24D200BC8EB5 /* MTSectionHeader.m */,
+				04F8E40620FF258E00BC8EB5 /* MTShopHeaderView.h */,
+				04F8E40720FF258E00BC8EB5 /* MTShopHeaderView.m */,
+				04F8E40A20FF27C600BC8EB5 /* MTShopCountStepper.h */,
+				04F8E40B20FF27C600BC8EB5 /* MTShopCountStepper.m */,
+				04F8E41C20FF2FD900BC8EB5 /* FQLinkageTableView.h */,
+				04F8E41D20FF2FD900BC8EB5 /* FQLinkageTableView.m */,
+				04F8E41F20FF301E00BC8EB5 /* FQGoodsIndexCell.h */,
+				04F8E42020FF301E00BC8EB5 /* FQGoodsIndexCell.m */,
+				04F8E42220FF32CD00BC8EB5 /* FQGoodsListCell.h */,
+				04F8E42320FF32CD00BC8EB5 /* FQGoodsListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04F8E3F820FF1AB900BC8EB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04F8E40D20FF286000BC8EB5 /* FQGoodsModel.h */,
+				04F8E40E20FF286000BC8EB5 /* FQGoodsModel.m */,
+				04F8E41020FF28C500BC8EB5 /* FQGoodsGroupModel.h */,
+				04F8E41120FF28C500BC8EB5 /* FQGoodsGroupModel.m */,
+				04F8E41320FF290D00BC8EB5 /* FQGoodsListModel.h */,
+				04F8E41420FF290D00BC8EB5 /* FQGoodsListModel.m */,
+				04F8E41620FF294300BC8EB5 /* FQShopCartModel.h */,
+				04F8E41720FF294300BC8EB5 /* FQShopCartModel.m */,
+				04F8E41920FF295300BC8EB5 /* FQShopBagModel.h */,
+				04F8E41A20FF295300BC8EB5 /* FQShopBagModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04F8E40220FF246B00BC8EB5 /* ShopCart */ = {
+			isa = PBXGroup;
+			children = (
+				04F8E42520FF3AA300BC8EB5 /* FQShoppingBar.h */,
+				04F8E42620FF3AA300BC8EB5 /* FQShoppingBar.m */,
+				04F8E42820FF3AC200BC8EB5 /* FQShoppingBarView.h */,
+				04F8E42920FF3AC200BC8EB5 /* FQShoppingBarView.m */,
+				04F8E43720FF58FD00BC8EB5 /* FQShoppingBarView.xib */,
+				04F8E42B20FF3ADA00BC8EB5 /* FQShoppingCartView.h */,
+				04F8E42C20FF3ADA00BC8EB5 /* FQShoppingCartView.m */,
+				04F8E42E20FF3AEC00BC8EB5 /* FQCartHeader.h */,
+				04F8E42F20FF3AEC00BC8EB5 /* FQCartHeader.m */,
+				04F8E43120FF3AFF00BC8EB5 /* FQCartFooter.h */,
+				04F8E43220FF3AFF00BC8EB5 /* FQCartFooter.m */,
+				04F8E43420FF3B0D00BC8EB5 /* FQCartGoodsCell.h */,
+				04F8E43520FF3B0D00BC8EB5 /* FQCartGoodsCell.m */,
+			);
+			path = ShopCart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0434ECF520CE1B34000156A5 /* LaunchScreen.storyboard in Resources */,
+				04F8E43820FF58FD00BC8EB5 /* FQShoppingBarView.xib in Resources */,
 				0434ECF220CE1B34000156A5 /* Assets.xcassets in Resources */,
 				0434ECF020CE1B33000156A5 /* Main.storyboard in Resources */,
 			);
@@ -439,34 +527,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04720F4820E223F9004B3334 /* MTTableViewCell.m in Sources */,
 				04720F3520E1E1A0004B3334 /* AliPayAppViewController.m in Sources */,
-				04720F8720E22A3D004B3334 /* MTDetailMenuView.m in Sources */,
+				04F8E42A20FF3AC200BC8EB5 /* FQShoppingBarView.m in Sources */,
 				04720F6920E224C9004B3334 /* NSArray+MASAdditions.m in Sources */,
+				04F8E40F20FF286000BC8EB5 /* FQGoodsModel.m in Sources */,
+				04F8E41220FF28C500BC8EB5 /* FQGoodsGroupModel.m in Sources */,
+				04F8E43320FF3AFF00BC8EB5 /* FQCartFooter.m in Sources */,
+				04F8E41820FF294300BC8EB5 /* FQShopCartModel.m in Sources */,
+				04F8E43620FF3B0D00BC8EB5 /* FQCartGoodsCell.m in Sources */,
+				04F8E41B20FF295300BC8EB5 /* FQShopBagModel.m in Sources */,
+				04F8E43020FF3AEC00BC8EB5 /* FQCartHeader.m in Sources */,
 				0434ECED20CE1B33000156A5 /* ViewController.m in Sources */,
 				04720F3220E1E191004B3334 /* GovAppViewController.m in Sources */,
 				04720F6B20E224C9004B3334 /* View+MASAdditions.m in Sources */,
-				04720F8420E229E5004B3334 /* MTGoodsContro.m in Sources */,
 				04720F6620E224C9004B3334 /* MASLayoutConstraint.m in Sources */,
+				04F8E40C20FF27C600BC8EB5 /* MTShopCountStepper.m in Sources */,
+				04F8E3FE20FF1DDE00BC8EB5 /* MTShopListCell.m in Sources */,
+				04F8E42D20FF3ADA00BC8EB5 /* FQShoppingCartView.m in Sources */,
+				04F8E41E20FF2FD900BC8EB5 /* FQLinkageTableView.m in Sources */,
+				04F8E40820FF258E00BC8EB5 /* MTShopHeaderView.m in Sources */,
 				04720F6F20E224F4004B3334 /* UIImage+Extension.m in Sources */,
 				04720F6420E224C9004B3334 /* MASConstraint.m in Sources */,
 				04720F6A20E224C9004B3334 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				04720F6320E224C9004B3334 /* MASCompositeConstraint.m in Sources */,
 				04720F2F20E1E182004B3334 /* MeiTuanAppViewController.m in Sources */,
-				04720F7E20E22909004B3334 /* MTGoodsCarToolBar.m in Sources */,
 				04720F2B20E1E0D3004B3334 /* BaseAppViewController.m in Sources */,
 				0434ECF820CE1B34000156A5 /* main.m in Sources */,
 				04720F6520E224C9004B3334 /* MASConstraintMaker.m in Sources */,
-				04720F8A20E22A64004B3334 /* MTDetailMenuList.m in Sources */,
-				04720F7520E22833004B3334 /* MTBaseView.m in Sources */,
-				04720F7220E227DC004B3334 /* MTBaseTableView.m in Sources */,
-				04720F7820E22859004B3334 /* MTDetailNavgation.m in Sources */,
 				04720F6C20E224C9004B3334 /* ViewController+MASAdditions.m in Sources */,
 				04720F6820E224C9004B3334 /* MASViewConstraint.m in Sources */,
-				04720F8120E229B6004B3334 /* MTDetailSubContro.m in Sources */,
+				04F8E40520FF24D200BC8EB5 /* MTSectionHeader.m in Sources */,
+				04F8E41520FF290D00BC8EB5 /* FQGoodsListModel.m in Sources */,
 				0434ECEA20CE1B33000156A5 /* AppDelegate.m in Sources */,
+				04F8E42420FF32CD00BC8EB5 /* FQGoodsListCell.m in Sources */,
+				04F8E42120FF301E00BC8EB5 /* FQGoodsIndexCell.m in Sources */,
+				04F8E3FB20FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m in Sources */,
+				04F8E40120FF236100BC8EB5 /* MeiTuanShopViewController.m in Sources */,
 				04720F6720E224C9004B3334 /* MASViewAttribute.m in Sources */,
-				04720F7B20E228D6004B3334 /* MTDetailCollection.m in Sources */,
+				04F8E42720FF3AA300BC8EB5 /* FQShoppingBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,8 +733,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AR9M6JHEVE;
+				DEVELOPMENT_TEAM = BK7D8W6QJ2;
 				GCC_PREFIX_HEADER = FQLinkageTableViewTool/PrefixHeader.pch;
 				INFOPLIST_FILE = FQLinkageTableViewTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -654,8 +753,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AR9M6JHEVE;
+				DEVELOPMENT_TEAM = BK7D8W6QJ2;
 				GCC_PREFIX_HEADER = FQLinkageTableViewTool/PrefixHeader.pch;
 				INFOPLIST_FILE = FQLinkageTableViewTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

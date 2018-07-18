@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tNY-Gd-TPV" customClass="FQShoppingBarView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rry-75-LWG">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="49"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping_cart_icon" translatesAutoresizingMaskIntoConstraints="NO" id="nx4-H9-FXz">
+                            <rect key="frame" x="18.5" y="13.5" width="23" height="23"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyy-o5-9o3">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="49"/>
+                        </button>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHg-lT-vV6">
+                            <rect key="frame" x="32" y="12" width="14" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.30588235289999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nx4-H9-FXz" firstAttribute="centerY" secondItem="Rry-75-LWG" secondAttribute="centerY" id="A7r-0X-xUl"/>
+                        <constraint firstAttribute="bottom" secondItem="Hyy-o5-9o3" secondAttribute="bottom" id="IJK-uB-gXi"/>
+                        <constraint firstAttribute="trailing" secondItem="Hyy-o5-9o3" secondAttribute="trailing" id="N2l-Cz-Kwh"/>
+                        <constraint firstAttribute="width" constant="60" id="h3Z-a6-FDL"/>
+                        <constraint firstItem="nx4-H9-FXz" firstAttribute="centerX" secondItem="Rry-75-LWG" secondAttribute="centerX" id="kII-Og-wYv"/>
+                        <constraint firstItem="Hyy-o5-9o3" firstAttribute="top" secondItem="Rry-75-LWG" secondAttribute="top" id="oeD-Jw-le4"/>
+                        <constraint firstItem="Hyy-o5-9o3" firstAttribute="leading" secondItem="Rry-75-LWG" secondAttribute="leading" id="tJ2-L0-g4l"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8R-p2-EC1">
+                    <rect key="frame" x="238" y="5" width="125" height="39"/>
+                    <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="Dlo-VK-i1Z"/>
+                        <constraint firstAttribute="width" constant="125" id="pCo-Lt-Et2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="去支付">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物车为空" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPi-8i-Skj">
+                    <rect key="frame" x="74" y="16.5" width="156" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Rry-75-LWG" firstAttribute="top" secondItem="tNY-Gd-TPV" secondAttribute="top" id="25P-h9-lzB"/>
+                <constraint firstItem="u8R-p2-EC1" firstAttribute="leading" secondItem="gPi-8i-Skj" secondAttribute="trailing" constant="8" id="271-Qn-NSG"/>
+                <constraint firstItem="u8R-p2-EC1" firstAttribute="centerY" secondItem="tNY-Gd-TPV" secondAttribute="centerY" id="DZv-kI-mkV"/>
+                <constraint firstItem="gPi-8i-Skj" firstAttribute="centerY" secondItem="u8R-p2-EC1" secondAttribute="centerY" id="eHk-Kk-dtS"/>
+                <constraint firstItem="gPi-8i-Skj" firstAttribute="leading" secondItem="Rry-75-LWG" secondAttribute="trailing" constant="14" id="qai-iw-9X5"/>
+                <constraint firstAttribute="bottom" secondItem="Rry-75-LWG" secondAttribute="bottom" id="u8A-EC-8Eo"/>
+                <constraint firstAttribute="trailing" secondItem="u8R-p2-EC1" secondAttribute="trailing" constant="12" id="uix-PY-oyj"/>
+                <constraint firstItem="Rry-75-LWG" firstAttribute="leading" secondItem="tNY-Gd-TPV" secondAttribute="leading" id="zLM-n7-kxA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="badgeLabel" destination="wHg-lT-vV6" id="DkA-74-zDe"/>
+                <outlet property="cartBtn" destination="Hyy-o5-9o3" id="TAQ-2I-JOQ"/>
+                <outlet property="payBtn" destination="u8R-p2-EC1" id="vL0-ZV-XfL"/>
+                <outlet property="priceL" destination="gPi-8i-Skj" id="EWe-Sk-sDz"/>
+                <outlet property="shoppingCartIcon" destination="nx4-H9-FXz" id="1Fx-5e-Qp7"/>
+                <outlet property="shoppingCartSuperView" destination="Rry-75-LWG" id="Nfq-mI-ZeC"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shopping_cart_icon" width="23" height="23"/>
+    </resources>
+</document>
