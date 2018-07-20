@@ -55,7 +55,7 @@
     ChangedHeight = headerHeight - NavBarHeight;
     _goodsList = [FQGoodsListModel new];
     BOUNDS = self.bounds;
-    leftWidth = 100;
+    leftWidth = 80;
     rightWidth = BOUNDS.size.width - leftWidth;
     
 }
@@ -89,7 +89,7 @@
     _leftTbView.dataSource = self;
     _leftTbView.showsVerticalScrollIndicator = NO;
     _leftTbView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    _rightTbView = [[UITableView alloc]initWithFrame:CGRectMake(leftWidth, headerHeight, rightWidth, BOUNDS.size.height-headerHeight+ChangedHeight) style:UITableViewStylePlain];
+    _rightTbView = [[UITableView alloc]initWithFrame:CGRectMake(leftWidth, headerHeight, rightWidth, BOUNDS.size.height-headerHeight+ChangedHeight) style:UITableViewStyleGrouped];
     _rightTbView.delegate = self;
     _rightTbView.dataSource = self;
     [self addSubview:_leftTbView];
@@ -113,6 +113,14 @@
         return [goodsGroup.goodsList count];
     }
     return 0;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if (tableView == _rightTbView) {
+        return @"商品列表";
+    }
+    return nil;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -144,7 +152,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (tableView==_leftTbView) {
-        return 64.f;
+        return 50.0f;
     }
     return 115.f;
 }
@@ -203,6 +211,10 @@
         [_leftTbView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionMiddle];//左边滚动到中间
         [_rightTbView scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:indexPath.row] atScrollPosition:UITableViewScrollPositionTop animated:YES];//右边相应section滚动到顶部
     }
+    if (tableView == _rightTbView) {
+        [_rightTbView deselectRowAtIndexPath:indexPath animated:NO];
+    }
+    
 }
 
 #pragma mark -

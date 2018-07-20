@@ -23,6 +23,7 @@
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self.contentView addSubview:self.titleLab];
+
         _selectView = [[UIView alloc]initWithFrame:self.bounds];
         _selectView.backgroundColor = [UIColor whiteColor];
         self.selectedBackgroundView = _selectView;
@@ -32,7 +33,6 @@
         [_selectView addSubview:liner];
         liner.center = CGPointMake(2, self.titleLab.center.y);
         
-        [self addView];
     }
     return self;
 }
@@ -68,8 +68,10 @@
 - (UILabel *)titleLab
 {
     if (!_titleLab) {
-        _titleLab = [[UILabel alloc]init];
+        _titleLab = [[UILabel alloc]initWithFrame:CGRectMake(5, 0, 70, 40)];
         _titleLab.text = @"美团外卖美团外卖美团外卖";
+        _titleLab.textAlignment = NSTextAlignmentCenter;
+        _titleLab.numberOfLines = 2;
         _titleLab.textColor = [UIColor blackColor];
         _titleLab.font = [UIFont systemFontOfSize:15];
     }

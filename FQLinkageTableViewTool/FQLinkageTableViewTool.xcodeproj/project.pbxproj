@@ -30,6 +30,11 @@
 		04720F6B20E224C9004B3334 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F5F20E224C9004B3334 /* View+MASAdditions.m */; };
 		04720F6C20E224C9004B3334 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F6220E224C9004B3334 /* ViewController+MASAdditions.m */; };
 		04720F6F20E224F4004B3334 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F6D20E224F4004B3334 /* UIImage+Extension.m */; };
+		047876BD210188420097D7E0 /* AliPayTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047876BC210188420097D7E0 /* AliPayTestViewController.m */; };
+		047876C0210188780097D7E0 /* AliPayFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047876BF210188780097D7E0 /* AliPayFunctionCell.m */; };
+		047876C321018E200097D7E0 /* AliPayHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047876C221018E200097D7E0 /* AliPayHeaderView.m */; };
+		047876C82101BB1B0097D7E0 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 047876C72101BB1B0097D7E0 /* UIView+Frame.m */; };
+		047876CB2101C03D0097D7E0 /* AliPayTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047876CA2101C03D0097D7E0 /* AliPayTopCell.m */; };
 		04F8E3FB20FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E3F920FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m */; };
 		04F8E3FE20FF1DDE00BC8EB5 /* MTShopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E3FD20FF1DDE00BC8EB5 /* MTShopListCell.m */; };
 		04F8E40120FF236100BC8EB5 /* MeiTuanShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F8E40020FF236100BC8EB5 /* MeiTuanShopViewController.m */; };
@@ -123,6 +128,16 @@
 		04720F6220E224C9004B3334 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		04720F6D20E224F4004B3334 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		04720F6E20E224F4004B3334 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		047876BB210188420097D7E0 /* AliPayTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayTestViewController.h; sourceTree = "<group>"; };
+		047876BC210188420097D7E0 /* AliPayTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayTestViewController.m; sourceTree = "<group>"; };
+		047876BE210188780097D7E0 /* AliPayFunctionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayFunctionCell.h; sourceTree = "<group>"; };
+		047876BF210188780097D7E0 /* AliPayFunctionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayFunctionCell.m; sourceTree = "<group>"; };
+		047876C121018E200097D7E0 /* AliPayHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayHeaderView.h; sourceTree = "<group>"; };
+		047876C221018E200097D7E0 /* AliPayHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayHeaderView.m; sourceTree = "<group>"; };
+		047876C62101BB1B0097D7E0 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		047876C72101BB1B0097D7E0 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		047876C92101C03D0097D7E0 /* AliPayTopCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AliPayTopCell.h; sourceTree = "<group>"; };
+		047876CA2101C03D0097D7E0 /* AliPayTopCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPayTopCell.m; sourceTree = "<group>"; };
 		04F8E3F920FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		04F8E3FA20FF1AEC00BC8EB5 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		04F8E3FC20FF1DDE00BC8EB5 /* MTShopListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTShopListCell.h; sourceTree = "<group>"; };
@@ -215,11 +230,8 @@
 		0434ECE720CE1B33000156A5 /* FQLinkageTableViewTool */ = {
 			isa = PBXGroup;
 			children = (
-				04F8E3FA20FF1AEC00BC8EB5 /* UINavigationBar+Awesome.h */,
-				04F8E3F920FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m */,
-				04720F6E20E224F4004B3334 /* UIImage+Extension.h */,
-				04720F6D20E224F4004B3334 /* UIImage+Extension.m */,
-				04720F4920E224C9004B3334 /* Masonry */,
+				047876C52101BB100097D7E0 /* Category */,
+				047876C42101BB080097D7E0 /* Tool */,
 				04720F2820E1E0B8004B3334 /* BaseApp */,
 				04720F2720E1E09F004B3334 /* MeiTuanApp */,
 				04720F2620E1E091004B3334 /* GovApp */,
@@ -261,6 +273,8 @@
 			children = (
 				04720F3320E1E1A0004B3334 /* AliPayAppViewController.h */,
 				04720F3420E1E1A0004B3334 /* AliPayAppViewController.m */,
+				047876B92101872B0097D7E0 /* Controller */,
+				047876BA2101872B0097D7E0 /* View */,
 			);
 			path = AliPayApp;
 			sourceTree = "<group>";
@@ -279,6 +293,8 @@
 			children = (
 				04720F2D20E1E182004B3334 /* MeiTuanAppViewController.h */,
 				04720F2E20E1E182004B3334 /* MeiTuanAppViewController.m */,
+				04F8E40920FF278900BC8EB5 /* MTShopCartDefine.h */,
+				04F8E40220FF246B00BC8EB5 /* ShopCart */,
 				04F8E3F620FF1AB900BC8EB5 /* Controller */,
 				04F8E3F820FF1AB900BC8EB5 /* Model */,
 				04F8E3F720FF1AB900BC8EB5 /* View */,
@@ -327,6 +343,49 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		047876B92101872B0097D7E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				047876BB210188420097D7E0 /* AliPayTestViewController.h */,
+				047876BC210188420097D7E0 /* AliPayTestViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		047876BA2101872B0097D7E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				047876BE210188780097D7E0 /* AliPayFunctionCell.h */,
+				047876BF210188780097D7E0 /* AliPayFunctionCell.m */,
+				047876C121018E200097D7E0 /* AliPayHeaderView.h */,
+				047876C221018E200097D7E0 /* AliPayHeaderView.m */,
+				047876C92101C03D0097D7E0 /* AliPayTopCell.h */,
+				047876CA2101C03D0097D7E0 /* AliPayTopCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		047876C42101BB080097D7E0 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				04720F4920E224C9004B3334 /* Masonry */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		047876C52101BB100097D7E0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04720F6E20E224F4004B3334 /* UIImage+Extension.h */,
+				04720F6D20E224F4004B3334 /* UIImage+Extension.m */,
+				04F8E3FA20FF1AEC00BC8EB5 /* UINavigationBar+Awesome.h */,
+				04F8E3F920FF1AEC00BC8EB5 /* UINavigationBar+Awesome.m */,
+				047876C62101BB1B0097D7E0 /* UIView+Frame.h */,
+				047876C72101BB1B0097D7E0 /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		04F8E3F620FF1AB900BC8EB5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,8 +398,6 @@
 		04F8E3F720FF1AB900BC8EB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04F8E40920FF278900BC8EB5 /* MTShopCartDefine.h */,
-				04F8E40220FF246B00BC8EB5 /* ShopCart */,
 				04F8E3FC20FF1DDE00BC8EB5 /* MTShopListCell.h */,
 				04F8E3FD20FF1DDE00BC8EB5 /* MTShopListCell.m */,
 				04F8E40320FF24D200BC8EB5 /* MTSectionHeader.h */,
@@ -528,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04720F3520E1E1A0004B3334 /* AliPayAppViewController.m in Sources */,
+				047876BD210188420097D7E0 /* AliPayTestViewController.m in Sources */,
 				04F8E42A20FF3AC200BC8EB5 /* FQShoppingBarView.m in Sources */,
 				04720F6920E224C9004B3334 /* NSArray+MASAdditions.m in Sources */,
 				04F8E40F20FF286000BC8EB5 /* FQGoodsModel.m in Sources */,
@@ -535,10 +593,13 @@
 				04F8E43320FF3AFF00BC8EB5 /* FQCartFooter.m in Sources */,
 				04F8E41820FF294300BC8EB5 /* FQShopCartModel.m in Sources */,
 				04F8E43620FF3B0D00BC8EB5 /* FQCartGoodsCell.m in Sources */,
+				047876C321018E200097D7E0 /* AliPayHeaderView.m in Sources */,
 				04F8E41B20FF295300BC8EB5 /* FQShopBagModel.m in Sources */,
 				04F8E43020FF3AEC00BC8EB5 /* FQCartHeader.m in Sources */,
 				0434ECED20CE1B33000156A5 /* ViewController.m in Sources */,
+				047876CB2101C03D0097D7E0 /* AliPayTopCell.m in Sources */,
 				04720F3220E1E191004B3334 /* GovAppViewController.m in Sources */,
+				047876C0210188780097D7E0 /* AliPayFunctionCell.m in Sources */,
 				04720F6B20E224C9004B3334 /* View+MASAdditions.m in Sources */,
 				04720F6620E224C9004B3334 /* MASLayoutConstraint.m in Sources */,
 				04F8E40C20FF27C600BC8EB5 /* MTShopCountStepper.m in Sources */,
@@ -548,6 +609,7 @@
 				04F8E40820FF258E00BC8EB5 /* MTShopHeaderView.m in Sources */,
 				04720F6F20E224F4004B3334 /* UIImage+Extension.m in Sources */,
 				04720F6420E224C9004B3334 /* MASConstraint.m in Sources */,
+				047876C82101BB1B0097D7E0 /* UIView+Frame.m in Sources */,
 				04720F6A20E224C9004B3334 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				04720F6320E224C9004B3334 /* MASCompositeConstraint.m in Sources */,
 				04720F2F20E1E182004B3334 /* MeiTuanAppViewController.m in Sources */,

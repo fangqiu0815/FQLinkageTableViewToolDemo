@@ -47,7 +47,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.navigationController pushViewController:[MeiTuanShopViewController new] animated:YES];
+    MeiTuanShopViewController *shopVC = [[MeiTuanShopViewController alloc]init];
+    [self.navigationController pushViewController:shopVC animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -110,6 +111,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.translucent = NO;
     NSIndexPath * selectIndexPath = [self.tableView indexPathForSelectedRow];
     if (selectIndexPath) {
         [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow]  animated:YES];

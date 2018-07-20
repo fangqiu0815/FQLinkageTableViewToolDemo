@@ -168,7 +168,7 @@
     
     //获取处于UITableView中心的cell
     //系统方法返回处于tableView某坐标处的cell的indexPath
-    NSIndexPath * middleIndexPath = [_rightTableView  indexPathForRowAtPoint:CGPointMake(0, scrollView.contentOffset.y + _rightTableView.frame.size.height/2)];
+    NSIndexPath * middleIndexPath = [_rightTableView indexPathForRowAtPoint:CGPointMake(0, scrollView.contentOffset.y + _rightTableView.frame.size.height/2)];
     NSLog(@"中间的cell：第 %ld 组 %ld个",middleIndexPath.section, middleIndexPath.row);
     
 }

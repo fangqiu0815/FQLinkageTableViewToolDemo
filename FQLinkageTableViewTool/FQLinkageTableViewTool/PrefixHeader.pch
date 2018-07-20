@@ -11,6 +11,8 @@
 
 #import "Masonry.h"
 #import "UIImage+Extension.h"
+#import "UIView+Frame.h"
+#import "UINavigationBar+Awesome.h"
 
 //竖屏幕宽高
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)

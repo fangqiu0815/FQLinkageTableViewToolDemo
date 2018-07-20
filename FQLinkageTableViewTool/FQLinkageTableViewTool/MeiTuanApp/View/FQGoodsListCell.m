@@ -19,6 +19,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self.contentView addSubview:self.nameL];
         [self.contentView addSubview:self.goodsImageV];
         [self.contentView addSubview:self.priceL];
@@ -65,15 +66,15 @@
     }];
     
     [self.priceL mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.goodsImageV.mas_right).offset(10);
+        make.left.mas_equalTo(self.nameL);
         make.bottom.mas_equalTo(self.goodsImageV.mas_bottom);
-        make.width.mas_equalTo(SCREEN_WIDTH/3);
-        make.height.mas_equalTo(25);
+        make.width.mas_equalTo(80);
+        make.height.mas_equalTo(20);
     }];
     
     [self.stepperSuperView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.priceL.mas_right);
-        make.right.mas_equalTo(self.contentView.mas_right);
+        make.width.mas_equalTo(80);
         make.centerY.mas_equalTo(self.priceL);
         make.height.mas_equalTo(30);
     }];

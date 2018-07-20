@@ -58,28 +58,28 @@
         make.left.mas_equalTo(self.iconBgView.mas_left).offset(10);
         make.bottom.mas_equalTo(self.iconBgView.mas_bottom).offset(-10);
         make.height.mas_equalTo(70);
-        make.width.mas_equalTo(80);
+        make.width.mas_equalTo(70);
     }];
     
     [self.titleLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.iconView.mas_right).offset(10);
         make.top.mas_equalTo(self.iconView.mas_top);
         make.right.mas_equalTo(self.iconBgView.mas_right).offset(-10);
-        make.height.mas_equalTo(35);
+        make.height.mas_equalTo(25);
     }];
     
     [self.addressLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.iconView.mas_right).offset(10);
         make.bottom.mas_equalTo(self.iconView.mas_bottom);
         make.right.mas_equalTo(self.iconBgView.mas_right).offset(-10);
-        make.height.mas_equalTo(25);
+        make.height.mas_equalTo(20);
     }];
     
     [self.phoneLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.iconView.mas_right).offset(10);
         make.bottom.mas_equalTo(self.addressLab.mas_top);
         make.right.mas_equalTo(self.iconBgView.mas_right).offset(-10);
-        make.height.mas_equalTo(25);
+        make.height.mas_equalTo(20);
     }];
     
 }
@@ -105,7 +105,7 @@
     if (!_titleLab) {
         _titleLab = [[UILabel alloc]init];
         _titleLab.text = @"美团外卖美团外卖美团外卖";
-        _titleLab.textColor = [UIColor blackColor];
+        _titleLab.textColor = [UIColor whiteColor];
         _titleLab.font = [UIFont systemFontOfSize:15];
     }
     return _titleLab;
@@ -116,7 +116,7 @@
     if (!_addressLab) {
         _addressLab = [[UILabel alloc]init];
         _addressLab.text = @"地址：环岛路会展中心";
-        _addressLab.textColor = [UIColor lightGrayColor];
+        _addressLab.textColor = [UIColor whiteColor];
         _addressLab.font = [UIFont systemFontOfSize:13];
     }
     return _addressLab;
@@ -127,7 +127,7 @@
     if (!_phoneLab) {
         _phoneLab = [[UILabel alloc]init];
         _phoneLab.text = @"电话：0592-88888888";
-        _phoneLab.textColor = [UIColor lightGrayColor];
+        _phoneLab.textColor = [UIColor whiteColor];
         _phoneLab.font = [UIFont systemFontOfSize:13];
     }
     return _phoneLab;

@@ -45,11 +45,11 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8R-p2-EC1">
-                    <rect key="frame" x="238" y="5" width="125" height="39"/>
+                    <rect key="frame" x="283" y="5" width="80" height="39"/>
                     <color key="backgroundColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="39" id="Dlo-VK-i1Z"/>
-                        <constraint firstAttribute="width" constant="125" id="pCo-Lt-Et2"/>
+                        <constraint firstAttribute="width" constant="80" id="pCo-Lt-Et2"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="去支付">
@@ -57,7 +57,7 @@
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物车为空" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPi-8i-Skj">
-                    <rect key="frame" x="74" y="16.5" width="156" height="17"/>
+                    <rect key="frame" x="74" y="16.5" width="201" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
