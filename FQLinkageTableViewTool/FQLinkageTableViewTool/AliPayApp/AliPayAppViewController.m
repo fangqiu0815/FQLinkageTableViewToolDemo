@@ -14,11 +14,11 @@
 
 @interface AliPayAppViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, UIScrollViewDelegate>
 
-/** <#name#> */
+/** 类别collection */
 @property (nonatomic, strong) UICollectionView *collectionView;
-/** <#name#> */
+/** 标题种类 */
 @property (nonatomic, strong) NSArray *dataSources;
-/** <#name#> */
+/** 标题collection */
 @property (nonatomic, strong) UICollectionView *topCollectionView;
 /**
  滑到了第几组
@@ -48,7 +48,9 @@
 #pragma mark 底部的scrollview
 -(void)setupContentView {
     _currentIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    self.collectionView.frame = CGRectMake(0, 40, SCREEN_WIDTH, SCREEN_HEIGHT-40);
+    [self.topCollectionView selectItemAtIndexPath:_currentIndexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
+
+    self.collectionView.frame = CGRectMake(0, 40, SCREEN_WIDTH, SCREEN_HEIGHT-40-StatusBarAndNavigationBarHeight);
     [self.view addSubview:self.collectionView];
 }
 
@@ -66,99 +68,9 @@
     }];
     
 }
-//
-//    //底部红色指示器
-//    UIView *indicatorView = [[UIView alloc] init];
-//    indicatorView.backgroundColor = CUSTOMCOLOR(15, 113, 226);
-//    //45 130 211
-//    indicatorView.yj_height = 2;
-//    indicatorView.tag = -1;
-//    indicatorView.yj_y = titlesView.yj_height - indicatorView.yj_height;
-//    self.indicatorView = indicatorView;
-//
-//    //内部子标签
-//    NSInteger count = self.dataSources.count;
-//    CGFloat width = titlesView.yj_width / count;
-//    CGFloat height = titlesView.yj_height;
-//    for (int i = 0; i < count; i++) {
-//        UIButton *button = [[UIButton alloc] init];
-//        button.yj_height = height;
-//        button.yj_width = width;
-//        button.yj_x = i * width;
-//        button.tag = i;
-//        [button setTitle:self.dataSources[i] forState:UIControlStateNormal];
-//        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//        [button setTitleColor:CUSTOMCOLOR(15, 113, 226) forState:UIControlStateDisabled];
-//        // YJColor(45, 130, 211)
-//        button.titleLabel.font = [UIFont systemFontOfSize:14];
-//        [button addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
-//        [titlesView addSubview:button];
-//
-//        //默认点击了第一个按钮
-//        if (i == 0) {
-//            button.enabled = NO;
-//            self.selectedButton = button;
-//            //让按钮内部的Label根据文字来计算内容
-//            [button.titleLabel sizeToFit];
-//            self.indicatorView.yj_width = button.titleLabel.yj_width;
-//            self.indicatorView.yj_centerX = button.yj_centerX;
-//        }
-//
-//    }
-//    [titlesView addSubview:indicatorView];
-//}
-//
-//#pragma mark 便签栏按钮点击
-//-(void)titleClick:(UIButton *)button {
-//
-//    self.selectedButton.enabled = YES;
-//    button.enabled = NO;
-//    self.selectedButton = button;
-//    //让标签执行动画
-//    [UIView animateWithDuration:0.25 animations:^{
-//        self.indicatorView.yj_width = self.selectedButton.titleLabel.yj_width;
-//        self.indicatorView.yj_centerX = self.selectedButton.yj_centerX;
-//    }];
-//    //滚动,切换子控制器
-//    CGPoint offset = self.contentView.contentOffset;
-//    offset.x = button.tag * self.contentView.yj_width;
-//    [self.contentView setContentOffset:offset animated:YES];
-//}
-
-
-//#pragma mark -UIScrollViewDelegate
-//-(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
-//    //添加子控制器的view
-//    //当前索引
-//    NSInteger index = scrollView.contentOffset.x / scrollView.yj_width;
-//    //取出子控制器
-//    UIViewController *vc = self.dataSources[index];
-//    vc.view.yj_x = scrollView.contentOffset.x;
-//    vc.view.yj_y = 0;//设置控制器的y值为0(默认为20)
-//    vc.view.yj_height = scrollView.yj_height;//设置控制器的view的height值为整个屏幕的高度（默认是比屏幕少20）
-//    [scrollView addSubview:vc.view];
-//
-//}
-//
-//-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-//
-//    [self scrollViewDidEndScrollingAnimation:scrollView];
-//    //当前索引
-//    NSInteger index = scrollView.contentOffset.x / scrollView.yj_width;
-//    //点击button
-//    [self titleClick:self.titlesView.subviews[index]];
-//
-//}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-//    //计算拖拽比例
-//    CGFloat ratio = scrollView.contentOffset.x/scrollView.yj_width;
-//    //将整数部分减掉，保留小数部分的比例
-//    ratio = ratio - self.selectedButton.tag;
-//    //设置下划线的centerX
-//    self.indicatorView.yj_centerX = self.selectedButton.yj_centerX + ratio*self.selectedButton.yj_width;
-//
-    
+
     if (scrollView == self.collectionView && _isSelected == NO) {
         //系统方法返回处于tableView某坐标处的cell的indexPath
         NSIndexPath * indexPath = [self.collectionView indexPathForItemAtPoint:scrollView.contentOffset];
@@ -168,6 +80,15 @@
         [self.topCollectionView reloadData];
         [self.topCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:indexPath.section inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
     }
+//
+//    if ([scrollView isEqual:self.collectionView]) {
+//        //计算偏移量
+//        CGFloat x = scrollView.contentOffset.x;
+//        NSInteger i = x/SCREEN_WIDTH;
+//        //当前偏移量/屏幕宽度 即为当前应滑动到的分区栏的section
+//        [self.topCollectionView selectItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:0] animated:YES scrollPosition:UICollectionViewScrollPositionCenteredHorizontally];
+//    }
+
     
     //获取处于UITableView中心的cell
     //系统方法返回处于tableView某坐标处的cell的indexPath
@@ -224,7 +145,6 @@
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-    
     UICollectionReusableView *reusableview = nil;
     if (collectionView == self.collectionView) {
         if (kind == UICollectionElementKindSectionHeader){
@@ -252,9 +172,6 @@
 {
     if (collectionView == self.topCollectionView) {
         _currentIndexPath = indexPath;
-
-        [collectionView deselectItemAtIndexPath:indexPath animated:NO];
-        [collectionView reloadData];
         [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:indexPath.row] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
         _isSelected = YES;
     } else {

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040839BE210705C000FEC7F8 /* FQShopAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040839BD210705C000FEC7F8 /* FQShopAppViewController.m */; };
+		040839C12107091F00FEC7F8 /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040839C02107091F00FEC7F8 /* LeftTableViewCell.m */; };
+		040839C42107094900FEC7F8 /* CollectionViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040839C32107094900FEC7F8 /* CollectionViewHeaderView.m */; };
+		040839C721070B5C00FEC7F8 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040839C621070B5C00FEC7F8 /* CollectionViewCell.m */; };
+		040839CA21070E4400FEC7F8 /* FQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 040839C921070E4400FEC7F8 /* FQCollectionViewFlowLayout.m */; };
 		0434ECEA20CE1B33000156A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434ECE920CE1B33000156A5 /* AppDelegate.m */; };
 		0434ECED20CE1B33000156A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434ECEC20CE1B33000156A5 /* ViewController.m */; };
 		0434ECF020CE1B33000156A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0434ECEE20CE1B33000156A5 /* Main.storyboard */; };
@@ -76,6 +81,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040839BC210705C000FEC7F8 /* FQShopAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQShopAppViewController.h; sourceTree = "<group>"; };
+		040839BD210705C000FEC7F8 /* FQShopAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQShopAppViewController.m; sourceTree = "<group>"; };
+		040839BF2107091F00FEC7F8 /* LeftTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftTableViewCell.h; sourceTree = "<group>"; };
+		040839C02107091F00FEC7F8 /* LeftTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewCell.m; sourceTree = "<group>"; };
+		040839C22107094900FEC7F8 /* CollectionViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeaderView.h; sourceTree = "<group>"; };
+		040839C32107094900FEC7F8 /* CollectionViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHeaderView.m; sourceTree = "<group>"; };
+		040839C521070B5C00FEC7F8 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		040839C621070B5C00FEC7F8 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		040839C821070E4400FEC7F8 /* FQCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		040839C921070E4400FEC7F8 /* FQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		0434ECE520CE1B33000156A5 /* FQLinkageTableViewTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQLinkageTableViewTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0434ECE820CE1B33000156A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0434ECE920CE1B33000156A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -207,6 +222,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040839B8210705A600FEC7F8 /* ShopApp */ = {
+			isa = PBXGroup;
+			children = (
+				040839B9210705A600FEC7F8 /* Controller */,
+				040839BA210705A600FEC7F8 /* Model */,
+				040839BB210705A600FEC7F8 /* View */,
+			);
+			path = ShopApp;
+			sourceTree = "<group>";
+		};
+		040839B9210705A600FEC7F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				040839BC210705C000FEC7F8 /* FQShopAppViewController.h */,
+				040839BD210705C000FEC7F8 /* FQShopAppViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		040839BA210705A600FEC7F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		040839BB210705A600FEC7F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				040839BF2107091F00FEC7F8 /* LeftTableViewCell.h */,
+				040839C02107091F00FEC7F8 /* LeftTableViewCell.m */,
+				040839C22107094900FEC7F8 /* CollectionViewHeaderView.h */,
+				040839C32107094900FEC7F8 /* CollectionViewHeaderView.m */,
+				040839C521070B5C00FEC7F8 /* CollectionViewCell.h */,
+				040839C621070B5C00FEC7F8 /* CollectionViewCell.m */,
+				040839C821070E4400FEC7F8 /* FQCollectionViewFlowLayout.h */,
+				040839C921070E4400FEC7F8 /* FQCollectionViewFlowLayout.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0434ECDC20CE1B33000156A5 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +286,7 @@
 		0434ECE720CE1B33000156A5 /* FQLinkageTableViewTool */ = {
 			isa = PBXGroup;
 			children = (
+				040839B8210705A600FEC7F8 /* ShopApp */,
 				047876C52101BB100097D7E0 /* Category */,
 				047876C42101BB080097D7E0 /* Tool */,
 				04720F2820E1E0B8004B3334 /* BaseApp */,
@@ -593,7 +650,9 @@
 				04F8E43320FF3AFF00BC8EB5 /* FQCartFooter.m in Sources */,
 				04F8E41820FF294300BC8EB5 /* FQShopCartModel.m in Sources */,
 				04F8E43620FF3B0D00BC8EB5 /* FQCartGoodsCell.m in Sources */,
+				040839BE210705C000FEC7F8 /* FQShopAppViewController.m in Sources */,
 				047876C321018E200097D7E0 /* AliPayHeaderView.m in Sources */,
+				040839CA21070E4400FEC7F8 /* FQCollectionViewFlowLayout.m in Sources */,
 				04F8E41B20FF295300BC8EB5 /* FQShopBagModel.m in Sources */,
 				04F8E43020FF3AEC00BC8EB5 /* FQCartHeader.m in Sources */,
 				0434ECED20CE1B33000156A5 /* ViewController.m in Sources */,
@@ -601,8 +660,10 @@
 				04720F3220E1E191004B3334 /* GovAppViewController.m in Sources */,
 				047876C0210188780097D7E0 /* AliPayFunctionCell.m in Sources */,
 				04720F6B20E224C9004B3334 /* View+MASAdditions.m in Sources */,
+				040839C42107094900FEC7F8 /* CollectionViewHeaderView.m in Sources */,
 				04720F6620E224C9004B3334 /* MASLayoutConstraint.m in Sources */,
 				04F8E40C20FF27C600BC8EB5 /* MTShopCountStepper.m in Sources */,
+				040839C721070B5C00FEC7F8 /* CollectionViewCell.m in Sources */,
 				04F8E3FE20FF1DDE00BC8EB5 /* MTShopListCell.m in Sources */,
 				04F8E42D20FF3ADA00BC8EB5 /* FQShoppingCartView.m in Sources */,
 				04F8E41E20FF2FD900BC8EB5 /* FQLinkageTableView.m in Sources */,
@@ -615,6 +676,7 @@
 				04720F2F20E1E182004B3334 /* MeiTuanAppViewController.m in Sources */,
 				04720F2B20E1E0D3004B3334 /* BaseAppViewController.m in Sources */,
 				0434ECF820CE1B34000156A5 /* main.m in Sources */,
+				040839C12107091F00FEC7F8 /* LeftTableViewCell.m in Sources */,
 				04720F6520E224C9004B3334 /* MASConstraintMaker.m in Sources */,
 				04720F6C20E224C9004B3334 /* ViewController+MASAdditions.m in Sources */,
 				04720F6820E224C9004B3334 /* MASViewConstraint.m in Sources */,

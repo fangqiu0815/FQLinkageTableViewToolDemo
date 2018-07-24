@@ -27,6 +27,7 @@
         _titleLab.text = @"";
         _titleLab.textAlignment = NSTextAlignmentCenter;
         _titleLab.textColor = [UIColor blackColor];
+        _titleLab.highlightedTextColor = CUSTOMCOLOR(15, 113, 226);
         _titleLab.font = [UIFont systemFontOfSize:13];
         [self addSubview:_titleLab];
         
@@ -42,8 +43,9 @@
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
     self.bottomView.backgroundColor = selected ? CUSTOMCOLOR(15, 113, 226) : [UIColor whiteColor];
-    self.titleLab.textColor = selected?CUSTOMCOLOR(15, 113, 226):[UIColor blackColor];
+    self.titleLab.highlighted = selected;
 }
+
 
 - (void)layoutSubviews
 {

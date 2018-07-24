@@ -11,6 +11,7 @@
 #import "AliPayAppViewController.h"
 #import "GovAppViewController.h"
 #import "MeiTuanAppViewController.h"
+#import "FQShopAppViewController.h"
 
 static NSString *cellID = @"cell";
 
@@ -35,7 +36,7 @@ static NSString *cellID = @"cell";
 - (NSArray *)dataSource
 {
     if (!_dataSource) {
-        _dataSource = @[@"基础联动",@"支付宝APP联动",@"国务院APP联动",@"美团外卖APP联动"];
+        _dataSource = @[@"基础联动",@"支付宝APP联动",@"国务院APP联动",@"美团外卖APP联动",@"商品分类页面联动"];
     }
     return _dataSource;
 }
@@ -70,8 +71,10 @@ static NSString *cellID = @"cell";
         [self.navigationController pushViewController:[AliPayAppViewController new] animated:YES];
     }else if (indexPath.row == 2){
         [self.navigationController pushViewController:[GovAppViewController new] animated:YES];
-    }else{
+    }else if (indexPath.row == 3){
         [self.navigationController pushViewController:[MeiTuanAppViewController new] animated:YES];
+    }else{
+        [self.navigationController pushViewController:[FQShopAppViewController new] animated:YES];
     }
     
 }
