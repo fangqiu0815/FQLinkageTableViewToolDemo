@@ -71,6 +71,10 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
+    if (!(scrollView.isTracking || scrollView.isDecelerating)) {
+        //不是用户滚动的，比如setContentOffset等方法，引起的滚动不需要处理。
+        return;
+    }
     if (scrollView == self.collectionView && _isSelected == NO) {
         //系统方法返回处于tableView某坐标处的cell的indexPath
         NSIndexPath * indexPath = [self.collectionView indexPathForItemAtPoint:scrollView.contentOffset];

@@ -20,6 +20,7 @@
 		0434ECF820CE1B34000156A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434ECF720CE1B34000156A5 /* main.m */; };
 		0434ED0220CE1B34000156A5 /* FQLinkageTableViewToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434ED0120CE1B34000156A5 /* FQLinkageTableViewToolTests.m */; };
 		0434ED0D20CE1B34000156A5 /* FQLinkageTableViewToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434ED0C20CE1B34000156A5 /* FQLinkageTableViewToolUITests.m */; };
+		045672A3214F8C75001E44D0 /* FQLinkageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045672A2214F8C75001E44D0 /* FQLinkageScrollView.m */; };
 		04720F2B20E1E0D3004B3334 /* BaseAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F2A20E1E0D3004B3334 /* BaseAppViewController.m */; };
 		04720F2F20E1E182004B3334 /* MeiTuanAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F2E20E1E182004B3334 /* MeiTuanAppViewController.m */; };
 		04720F3220E1E191004B3334 /* GovAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04720F3120E1E191004B3334 /* GovAppViewController.m */; };
@@ -107,6 +108,8 @@
 		0434ED0820CE1B34000156A5 /* FQLinkageTableViewToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FQLinkageTableViewToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0434ED0C20CE1B34000156A5 /* FQLinkageTableViewToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQLinkageTableViewToolUITests.m; sourceTree = "<group>"; };
 		0434ED0E20CE1B34000156A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045672A1214F8C75001E44D0 /* FQLinkageScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQLinkageScrollView.h; sourceTree = "<group>"; };
+		045672A2214F8C75001E44D0 /* FQLinkageScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQLinkageScrollView.m; sourceTree = "<group>"; };
 		04720F2920E1E0D3004B3334 /* BaseAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAppViewController.h; sourceTree = "<group>"; };
 		04720F2A20E1E0D3004B3334 /* BaseAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAppViewController.m; sourceTree = "<group>"; };
 		04720F2C20E1E0EB004B3334 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 			children = (
 				04720F3020E1E191004B3334 /* GovAppViewController.h */,
 				04720F3120E1E191004B3334 /* GovAppViewController.m */,
+				045672A1214F8C75001E44D0 /* FQLinkageScrollView.h */,
+				045672A2214F8C75001E44D0 /* FQLinkageScrollView.m */,
 			);
 			path = GovApp;
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 				04720F6C20E224C9004B3334 /* ViewController+MASAdditions.m in Sources */,
 				04720F6820E224C9004B3334 /* MASViewConstraint.m in Sources */,
 				04F8E40520FF24D200BC8EB5 /* MTSectionHeader.m in Sources */,
+				045672A3214F8C75001E44D0 /* FQLinkageScrollView.m in Sources */,
 				04F8E41520FF290D00BC8EB5 /* FQGoodsListModel.m in Sources */,
 				0434ECEA20CE1B33000156A5 /* AppDelegate.m in Sources */,
 				04F8E42420FF32CD00BC8EB5 /* FQGoodsListCell.m in Sources */,
