@@ -17,12 +17,14 @@ static float kCollectionViewMargin = 3.f;
 
 @interface FQShopAppViewController()<UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 
-/** <#name#> */
 @property (nonatomic, strong) UITableView *tableView;
-/** <#name#> */
+
 @property (nonatomic, strong) UICollectionView *collectionView;
+
 @property (nonatomic, strong) NSMutableArray *dataSource;
+
 @property (nonatomic, strong) NSMutableArray *collectionDatas;
+
 @property (nonatomic, strong) FQCollectionViewFlowLayout *flowLayout;
 
 @end
@@ -157,7 +159,6 @@ static float kCollectionViewMargin = 3.f;
 }
 
 #pragma mark - 解决点击 TableView 后 CollectionView 的 Header 遮挡问题
-
 - (void)scrollToTopOfSection:(NSInteger)section animated:(BOOL)animated
 {
     CGRect headerRect = [self frameForHeaderForSection:section];
@@ -207,9 +208,7 @@ static float kCollectionViewMargin = 3.f;
     { // header
         reuseIdentifier = @"CollectionViewHeaderView";
     }
-    CollectionViewHeaderView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-                                                                        withReuseIdentifier:reuseIdentifier
-                                                                               forIndexPath:indexPath];
+    CollectionViewHeaderView *view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     if ([kind isEqualToString:UICollectionElementKindSectionHeader])
     {
         view.title.text = self.dataSource[indexPath.section];

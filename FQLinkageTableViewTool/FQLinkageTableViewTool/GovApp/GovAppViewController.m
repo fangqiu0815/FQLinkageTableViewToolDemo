@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationItem.title = @"国务院APP联动";
     [self.view addSubview:self.menuView];
     [self.view addSubview:self.tableView];
     
